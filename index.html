@@ -1,46 +1,56 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>fullPage.js A simple Demo</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage very simple demo." />
-    <meta name="keywords"  content="fullpage,jquery,demo,simple" />
-    <meta name="Resource-type" content="Document" />
+    <meta charset="utf-8">
 
+    <title>Bryan Yeung's Portfolio</title>
 
+    <!-- fullPage css -->
     <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css" />
-    <!--<link rel="stylesheet" type="text/css" href="examples.css" />-->
 
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    <!--<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>-->
 
     <script type="text/javascript" src="libs/fullPage/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+                scrollingSpeed: 600,
+
+                anchors:['Me', 'Work', 'Contact'], //dunno wht other sections needed.
+                navigation: true,
+                navigationToolTips: ['About Me', 'My Work', 'Contact Me'],
+                slidesNavigation: true,
+
+                sectionsColor: ['#274156', '#274156', '#274156']
             });
         });
     </script>
-
 </head>
+
 <body>
 
 <div id="fullpage">
-    <div class="section active" id="section0"><h1>fullPage.js</h1></div>
+    <div class="section active" id="section0">
+        <h1>Hi, I'm Bryan</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
     <div class="section" id="section1">
-        <div class="slide "><h1>Simple Demo</h1></div>
-        <div class="slide active"><h1>Only text</h1></div>
+        <div class="slide active"><h1>About Me</h1></div>
+        <div class="slide"><h1>Only text</h1></div>
         <div class="slide"><h1>And text</h1></div>
         <div class="slide"><h1>And more text</h1></div>
     </div>
-    <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-    <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+
+    <div class="section" id="section2">
+        <h1>Contact Me</h1>
+        <p>Linked In: <a href="https://www.linkedin.com/in/bryan-yeung-689724138/">Bryan Yeung</a></p>
+        <p>Github: <a href="https://github.com/byeung121">byeung121</a>
+        <p>E-mail: <a href="mailto:bryanyng96@gmail.com?">bryanyng96@gmail.com</a></p>
+    </div>
 </div>
 
 </body>

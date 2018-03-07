@@ -1,64 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>fullPage.js A simple Demo</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
 
 
-    <title>Bryan Yeung's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-    <!-- Custom css -->
-    <link href="style/style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="../jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+            });
+        });
+    </script>
+
 </head>
-
 <body>
 
-<div class="wrapper">
-
-    <div class="content-wrapper">
-
-        <div class="container">
-
-            <header class="header">
-                <h3 class="header-title">Bryan Yeung</h3>
-
-                <nav class="nav">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                </nav>
-            </header>
-
-            <div class="content-block">
-                <h1>Hi, I'm Bryan.</h1>
-                <p>Place intro here~</p>
-            </div>
-
-            <footer class="footer">
-                <h3 class="footer-title">Contact Me</h3>
-                <p>Github: <a href="https://github.com/byeung121">byeung121</a>
-                    | Linked In: <a href="https://www.linkedin.com/in/bryan-yeung-689724138/">Bryan Yeung</a>
-                    | E-mail: <a href="mailto:bryanyng96@gmail.com?">bryanyng96@gmail.com</a></p>
-            </footer>
-
-        </div>
-
+<div id="fullpage">
+    <div class="section active" id="section0"><h1>fullPage.js</h1></div>
+    <div class="section" id="section1">
+        <div class="slide "><h1>Simple Demo</h1></div>
+        <div class="slide active"><h1>Only text</h1></div>
+        <div class="slide"><h1>And text</h1></div>
+        <div class="slide"><h1>And more text</h1></div>
     </div>
-
+    <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+    <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
 </div>
 
-<!--Bootstrap JS-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
 </body>
 </html>

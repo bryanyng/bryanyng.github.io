@@ -4,21 +4,30 @@ a:hover {
     color: #ffffff;
 }
 
-body{
+body {
     font-family: helvetica, monospace;
     color: #ffffff;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-h1{
+h1 {
     font-size: 4em;
 }
 
-p{
+p {
     font-size: 2em;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    padding: 10px;
 }
 
 .wrap{
@@ -41,4 +50,10 @@ p{
 .fp-controlArrow {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.icon {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
 }

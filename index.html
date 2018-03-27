@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Bryan Yeung's Portfolio</title>
+    <title>Bryan Yeung</title>
 
     <!-- fullPage css -->
     <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css" />
@@ -17,14 +17,16 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                scrollingSpeed: 600,
+                scrollingSpeed: 400,
+                autoScrolling: false,
+                fitToSelectionDelay: 800,
 
-                anchors:['Me', 'Work', 'Contact'],
+                anchors:['Me', 'Experience', 'Work', 'Contact'],
                 navigation: true,
-                navigationToolTips: ['About Me', 'My Work', 'Contact Me'],
+                navigationToolTips: ['About Me', 'My Experience', 'My Work', 'Contact Me'],
                 slidesNavigation: true,
 
-                sectionsColor: ['#274156', '#274156', '#274156']
+                sectionsColor: ['#274156', '#274156', '#274156', '#274156']
             });
         });
     </script>
@@ -35,23 +37,70 @@
 <div id="fullpage">
     <div class="section active" id="section0">
         <h1>Hi, I'm Bryan</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p class="intro">
+            I'm currently a final year Computer Science student studying at University of New South Wales (UNSW).
+            Looking to gain experience in software development and expand my own skill-set.
+        </p>
     </div>
 
     <div class="section" id="section1">
-        <div class="slide active"><h1>About Me</h1></div>
-        <div class="slide"><h1>Only text</h1></div>
-        <div class="slide"><h1>And text</h1></div>
-        <div class="slide"><h1>And more text</h1></div>
+        <h1>Experience</h1>
+        <h2>Internship at Lalamove HK</h2>
+        <h3 class="date">Nov 2016 - Feb 2017</h3>
+        <p>
+
+        </p>
+
     </div>
 
     <div class="section" id="section2">
+        <h1>My Work</h1>
+        <h2>University Group Projects</h2>
+        <p>
+            As part of coursework, occasionally it was required of us to complete group projects together.
+            Throughout these projects we are encouraged to utilise some form of version control and agile
+            methods to manage our projects. Though these examples are not perfect, but they are examples
+            that I think turned out particularly well.
+        </p>
+
+        <h3>Android App - Recipedia</h3>
+        <p>
+            For this project, we managed to implement an app made for people who want to share and browse
+            recipes for food. The final product was able make corresponding api calls to Google's Firebase,
+            where we stored user information and recipe data. As seen in the screenshots below, users are able
+            to register and login to their own accounts. And even if they are not logged in, users may still
+            search and browse for recipes of their liking. While logged in, users are able to save recipes
+            that they like and upload to share recipes of their own.
+        </p>
+        <div class="gallery">
+            <img src="img/RecipediaHome.png" alt="RecipediaHome" class="recipediaImg"/>
+            <img src="img/RecipediaLogin.png" alt="RecipediaLogin" class="recipediaImg"/>
+            <img src="img/RecipediaNavMenu.png" alt="RecipediaNavMenu" class="recipediaImg"/>
+            <img src="img/RecipediaRegister.png" alt="RecipediaRegister" class="recipediaImg"/>
+            <img src="img/RecipediaBrowse.png" alt="RecipediaBrowse" class="recipediaImg"/>
+            <img src="img/RecipediaView.png" alt="RecipediaView" class="recipediaImg"/>
+        </div>
+        <h3>Java Game - Sokoban</h3>
+        <p>
+            Under the restrictions of creating a 'Sokoban' game, and this being a Object-Oriented course
+            taught with Java. We recreated the game using OO programming principles. Upon that we added
+            multi-player and the ability for players to generate their own sokoban puzzles.
+        </p>
+        <div class="gallery">
+            <img src="img/SokobanMenu.png" alt="SokobanMenu" class="sokobanImg"/>
+            <img src="img/SokobanSinglePlayer.png" alt="SokobanSinglePlayer" class="sokobanImg"/>
+            <img src="img/SokobanMultiplayer.png" alt="SokobanMultiplayer" class="sokobanImg"/>
+            <img src="img/SokobanLevelGenerator.png" alt="SokobanLevelGenerator" class="sokobanImg"/>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
         <h1>Contact Me</h1>
         <table>
             <tr>
                 <th>
                     <object class="icon" type="image/svg+xml" data="img/mark-github.svg">
-                    Your browser does not support SVG
+                        Github:
                     </object>
                 </th>
                 <th>
@@ -61,7 +110,7 @@
             <tr>
                 <th>
                     <object class="icon" type="image/svg+xml" data="img/linkedin.svg">
-                        Your browser does not support SVG
+                        LinkedIn:
                     </object>
                 </th>
                 <th>
@@ -71,7 +120,7 @@
             <tr>
                 <th>
                     <object class="icon" type="image/svg+xml" data="img/mail.svg">
-                        Your browser does not support SVG
+                        E-mail:
                     </object>
                 </th>
                 <th>
@@ -79,6 +128,10 @@
                 </th>
             </tr>
         </table>
+        <p class="footer">
+            Web page created with the aid of
+            <a href ="https://github.com/alvarotrigo/fullpage.js">fullpage.js</a>
+        </p>
     </div>
 </div>
 

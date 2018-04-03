@@ -5,51 +5,133 @@
 
     <title>Bryan Yeung</title>
 
-    <!-- fullPage css -->
-    <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css" />
+    <!-- FullPage CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css"/>
 
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+    <!-- PhotoSwipe CSS + JS -->
+    <link rel="stylesheet" href="libs/photoSwipe/photoswipe.css">
+    <link rel="stylesheet" href="libs/photoSwipe/default-skin/default-skin.css">
+    <script src="libs/photoSwipe/photoswipe.min.js"></script>
+    <script src="libs/photoSwipe/photoswipe-ui-default.min.js"></script>
+
+    <!-- FullPage JS -->
     <script type="text/javascript" src="libs/fullPage/jquery.fullPage.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#fullpage').fullpage({
                 scrollingSpeed: 400,
                 autoScrolling: false,
                 fitToSelectionDelay: 800,
 
-                anchors:['Me', 'Experience', 'Work', 'Contact'],
+                anchors: ['AboutMe', 'MyExperience', 'MyWork', 'ContactMe'],
                 navigation: true,
                 navigationToolTips: ['About Me', 'My Experience', 'My Work', 'Contact Me'],
                 slidesNavigation: true,
+                showActiveTooltip: true,
 
-                sectionsColor: ['#274156', '#274156', '#274156', '#274156']
+                sectionsColor: ['#274156', '#274156', '#274156', '#274156'],
             });
         });
     </script>
 </head>
 
 <body>
-
 <div id="fullpage">
     <div class="section active" id="section0">
         <h1>Hi, I'm Bryan</h1>
-        <p class="intro">
-            I am currently a final year Computer Science student studying at University of New South Wales (UNSW).
-            Looking to gain experience in software development and to expand my skill-set.
-            I am passionate in
-            front-end and app development but also open to learning other areas of software development.
-            I love to complain about UI designs that I come across in life. I also enjoy occasional sessions
-            of photography.
-        </p>
+        <!--<p class="intro">-->
+            <!--I am currently a final year Computer Science student studying at University of New South Wales (UNSW).-->
+            <!--Looking to gain experience in software development and to expand my skill-set. I am passionate in-->
+            <!--front-end and app development but also open to learning other areas of software development.-->
+            <!--I love to complain about questionable UI designs that I come across in life. I also enjoy occasional-->
+            <!--sessions of photography.-->
+        <!--</p>-->
+        <h4>I am...</h4>
+        <ul>
+            <li>Currently a final year Computer Science student studying at University of New South Wales (UNSW)</li>
+            <li>Looking to gain experience in software development and to expand my skill-set</li>
+            <li>Passionate in front-end and app development but also open to learning other areas of software development</li>
+        </ul>
+        <h4>I enjoy...</h4>
+        <ul>
+            <li>Complaining about inconvenient experiences on applications I come across</li>
+            <li>Sessions of photography, feel free to browse my gallery below!</li>
+        </ul>
+        <div id="photo-gallery" class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0480.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0480.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0090.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0090.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1139.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1139.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0092.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0092.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0137.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0137.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0416.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0416.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0769.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0769.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0771.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0771.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0876.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0876.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1048.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1048.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1079.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1079.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1109.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1109.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+        </div>
     </div>
 
     <div class="section" id="section1">
         <h1>Experience</h1>
-        <h2>Internship at Lalamove HK</h2>
+        <h2>Internship at <a href="https://www.lalamove.com/hongkong/en/home" target="_blank">Lalamove HK</a></h2>
         <h3 class="date">Nov 2016 - Feb 2017</h3>
         <p>
             Lalamove is an on-demand logistics company originating from Hong Kong. They currently have both a mobile
@@ -73,14 +155,20 @@
             the project was broken down into user stories for us to complete. It was also necessary for us to follow
             the company’s practices in version control. For example, it was required of us to follow their guidelines
             on writing commit messages in Git. The guidelines provided a way of identifying what kind of update was made
-            on a particular repository at a glance. Such as “FIX: …” meaning a fix was made, and “UPT: …” meaning an update.
+            on a particular repository at a glance. Such as “FIX: …” meaning a fix was made, and “UPT: …” meaning an
+            update.
             This gave me realistic experience in project management with Jira and Git where we actively collaborated on
             the project between us as interns.
         </p>
         <p>
-            Unfortunately, I am unable to share any of my work done at Lalamove. But I would like to once again thank them
+            Unfortunately, I am unable to share any of my work done at Lalamove. But I would like to once again thank
+            them
             for allowing an opportunity for me to gain valuable experience, and broadening my technological knowledge
             during my time there.
+        </p>
+        <h3 class="date">TLDR;</h3>
+        <p>
+            (IN PROGRESS...)
         </p>
 
     </div>
@@ -104,7 +192,7 @@
             search and browse for recipes of their liking. While logged in, users are able to save recipes
             that they like and upload to share recipes of their own.
         </p>
-        <div class="gallery">
+        <div class="demo-images">
             <img src="img/RecipediaHome.png" alt="RecipediaHome" class="recipediaImg"/>
             <img src="img/RecipediaLogin.png" alt="RecipediaLogin" class="recipediaImg"/>
             <img src="img/RecipediaNavMenu.png" alt="RecipediaNavMenu" class="recipediaImg"/>
@@ -118,7 +206,7 @@
             taught with Java. We recreated the game using OO programming principles. Upon that we added
             multi-player and the ability for players to generate their own sokoban puzzles.
         </p>
-        <div class="gallery">
+        <div class="demo-images">
             <img src="img/SokobanMenu.png" alt="SokobanMenu" class="sokobanImg"/>
             <img src="img/SokobanSinglePlayer.png" alt="SokobanSinglePlayer" class="sokobanImg"/>
             <img src="img/SokobanMultiplayer.png" alt="SokobanMultiplayer" class="sokobanImg"/>
@@ -136,7 +224,7 @@
                     </object>
                 </th>
                 <th>
-                    <a href="https://github.com/byeung121">byeung121</a>
+                    <a href="https://github.com/byeung121" target="_blank">byeung121</a>
                 </th>
             </tr>
             <tr>
@@ -146,7 +234,7 @@
                     </object>
                 </th>
                 <th>
-                    <a href="https://www.linkedin.com/in/bryan-yeung-689724138/">Bryan Yeung</a>
+                    <a href="https://www.linkedin.com/in/bryan-yeung-689724138/" target="_blank">Bryan Yeung</a>
                 </th>
             </tr>
             <tr>
@@ -162,7 +250,8 @@
         </table>
         <p class="footer">
             Web page created with the aid of
-            <a href ="https://github.com/alvarotrigo/fullpage.js">fullpage.js</a>
+            <a href="https://github.com/alvarotrigo/fullpage.js" target="_blank">FullPage.js</a>
+             and <a href=https://github.com/dimsemenov/photoswipe" target="_blank">PhotoSwipe</a>
             <br>
             PS: this page is a work in progress, and will be updated as life goes on.
         </p>
@@ -172,5 +261,106 @@
     </div>
 </div>
 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    'use strict';
+
+    (function($) {
+
+        // Init empty gallery array
+        var container = [];
+
+        // Loop over gallery items and push it to the array
+        $('#photo-gallery').find('figure').each(function() {
+            var $link = $(this).find('a'),
+                item = {
+                    src: $link.attr('href'),
+                    w: $link.data('width'),
+                    h: $link.data('height'),
+                    title: $link.data('caption')
+                };
+            container.push(item);
+        });
+
+        // Define click event on gallery item
+        $('#photo-gallery').find('a').click(function(event) {
+
+            // Prevent location change
+            event.preventDefault();
+
+            // Define object and gallery options
+            var $pswp = $('.pswp')[0],
+                options = {
+                    index: $(this).parent('figure').index(),
+                    bgOpacity: 0.85,
+                    showHideOpacity: true
+                };
+
+            // Initialize PhotoSwipe
+            var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+            gallery.init();
+        });
+
+    }(jQuery));
+</script>
 </body>
 </html>

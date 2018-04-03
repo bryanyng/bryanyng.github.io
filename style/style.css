@@ -24,6 +24,12 @@ h3 {
     font-size: 2em;
 }
 
+h4 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 p {
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +47,17 @@ th {
     font-size: 1.2em;
 }
 
+ul {
+    margin: auto;
+    width: 75%;
+    list-style: square inside;
+}
+
+li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .wrap{
     margin-left: auto;
     margin-right: auto;
@@ -52,24 +69,30 @@ th {
     text-align: center;
 }
 
+.photo-gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+}
+
+.photo-gallery img {
+    display: block;
+}
+
 .date {
     font-size: 1.5em;
 }
 
-/*Introduction text*/
-.intro {
-    font-size: 2em;
-    width: 75%;
-}
-/*Footer*/
 .footer {
     padding-top: 3em;
     font-size: 10px;
 }
 
-.gallery {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.demo-images {
+    display: inline;
+    margin: 50px auto;
+    width:75%;
 }
 
 .recipediaImg {
@@ -84,14 +107,23 @@ th {
     margin: 5px;
 }
 
-/*Navigation Style*/
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background-color: #ffffff;
-}
-
-/*Icons*/
 .icon {
     height: 2em;
     width: 2em;
     vertical-align: middle;
+}
+
+/*====== FullPage ======*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #ffffff;
+}
+
+/*====== Photo Swipe ======*/
+figure {
+    float: left;
+    margin: 0;
+}
+
+.hover-light:hover {
+-webkit-filter: brightness(125%);
 }

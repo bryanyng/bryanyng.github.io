@@ -58,6 +58,10 @@ li {
     margin-bottom: 1em;
 }
 
+.intro {
+    font-size: 1.5em;
+}
+
 .wrap{
     margin-left: auto;
     margin-right: auto;

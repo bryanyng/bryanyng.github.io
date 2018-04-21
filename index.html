@@ -20,21 +20,20 @@
     <script src="libs/photoSwipe/photoswipe-ui-default.min.js"></script>
 
     <!-- FullPage JS -->
+    <script type="text/javascript" src="libs/fullPage/scrolloverflow.js"></script>
     <script type="text/javascript" src="libs/fullPage/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                scrollingSpeed: 400,
-                autoScrolling: false,
-                fitToSelectionDelay: 800,
+                scrollingSpeed: 600,
 
-                anchors: ['AboutMe', 'MyExperience', 'MyWork', 'ContactMe'],
+                anchors: ['AboutMe', 'MyExperience', 'MyWork', 'ContactMe', 'Gallery'],
                 navigation: true,
-                navigationToolTips: ['About Me', 'My Experience', 'My Work', 'Contact Me'],
+                navigationToolTips: ['About Me', 'My Experience', 'My Work', 'Contact Me', 'Gallery'],
                 slidesNavigation: true,
                 showActiveTooltip: true,
-
-                sectionsColor: ['#274156', '#274156', '#274156', '#274156'],
+                scrollOverflow: true,
+                offsetSections: true
             });
         });
     </script>
@@ -52,8 +51,8 @@
             I am passionate in front-end and app development but also open to learning other areas of software development.
         </p>
         <p class="intro">
-            I enjoy complaing about inconvenient experiences on application I come across. I also enjoy occasional
-            sessions of photography.
+            I enjoy complaining about inconvenient experiences on application I come across. I also enjoy occasional
+            sessions of photography. Feel free to have a look at my gallery at the bottom of this page!
         </p>
         <!--<h4>I am...</h4>-->
         <!--<ul>-->
@@ -66,71 +65,6 @@
             <!--<li>Complaining about inconvenient experiences on applications I come across</li>-->
             <!--<li>Sessions of photography, feel free to browse my gallery below!</li>-->
         <!--</ul>-->
-        <div id="photo-gallery" class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0480.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0480.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0090.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0090.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_1139.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_1139.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0092.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0092.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0137.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0137.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0416.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0416.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0769.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0769.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0771.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0771.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_0876.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_0876.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_1048.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_1048.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_1079.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_1079.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/DSC_1109.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
-                    <img src="img/DSC_1109.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
-                </a>
-            </figure>
-        </div>
     </div>
 
     <div class="section" id="section1">
@@ -184,7 +118,7 @@
             As part of coursework, occasionally it was required of us to complete group projects together.
             Throughout these projects we are encouraged to utilise some form of version control and agile
             methods to manage our projects. Though these examples are not perfect, but they are examples
-            that I think turned out particularly well.
+            that I think turned out particularly well given the restriction on time.
         </p>
 
         <h3>Android App - Recipedia</h3>
@@ -259,9 +193,75 @@
             <br>
             PS: this page is a work in progress, and will be updated as life goes on.
         </p>
-        <p>
+    </div>
 
-        </p>
+    <div class="section" id="section4">
+        <h1>Gallery</h1>
+        <div id="photo-gallery" class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0480.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0480.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0090.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0090.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1139.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1139.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0092.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0092.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0137.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0137.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0416.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0416.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0769.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0769.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0771.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0771.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_0876.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_0876.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1048.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1048.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1079.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1079.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/DSC_1109.jpg" data-width="1286" data-height="854" itemprop="contentUrl">
+                    <img src="img/DSC_1109.jpg" width="268" height="178" class="hover-light" itemprop="thumbnail" alt="Image description">
+                </a>
+            </figure>
+        </div>
     </div>
 </div>
 
@@ -295,7 +295,6 @@
 
                 <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
                 <!-- element will get class pswp__preloader--active when preloader is running -->
                 <div class="pswp__preloader">
                     <div class="pswp__preloader__icn">

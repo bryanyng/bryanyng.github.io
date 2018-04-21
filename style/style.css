@@ -122,6 +122,36 @@ li {
     background-color: #ffffff;
 }
 
+#section0 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#5A9367), to(#426B4B));
+    background: -webkit-linear-gradient(#5A9367, #426B4B);
+    background: linear-gradient(#5A9367,#426B4B);
+}
+
+#section1 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#F16622), to(#C6541C));
+    background: -webkit-linear-gradient(#F16622, #C6541C);
+    background: linear-gradient(#F16622,#C6541C);
+}
+
+#section2 {
+    background: -webkit-gradient(linear, top left, bottom right, from(#63819F), to(#3C5C7E));
+    background: -webkit-linear-gradient(#63819F, #3C5C7E);
+    background: linear-gradient(#63819F,#3C5C7E);
+}
+
+#section3 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#414073), to(#36355F));
+    background: -webkit-linear-gradient(#414073, #36355F);
+    background: linear-gradient(#414073,#36355F);
+}
+
+#section4 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#5C6D69), to(#384D48));
+    background: -webkit-linear-gradient(#5C6D69, #384D48);
+    background: linear-gradient(#5C6D69,#384D48);
+}
+
 /*====== Photo Swipe ======*/
 figure {
     float: left;
